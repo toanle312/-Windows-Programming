@@ -1,0 +1,17 @@
+﻿<Window x:Class="RandomEnglish.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RandomEnglish"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="Learn English vocabulary" Height="800" Width="800" Loaded="Window_Loaded">
+    <Canvas>
+        <Image Name="vocabularyImage" Source="/Image/animal2.jpg" Width="724" Height="550" HorizontalAlignment="Left" Canvas.Top="90" VerticalAlignment="Center" Canvas.Left="31"/>
+        <Label Name="vocabularyLabel" Content="Animal" FontSize="30" Canvas.Left="143" Canvas.Top="30" Width="500" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" />
+        <Button x:Name="showButton" Click="showButton_Click" Content="Show orther words" Width="150" Height="50" FontSize="15" Canvas.Left="325" Canvas.Top="683" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    </Canvas>
+    <Window.Background>
+        <ImageBrush ImageSource="/Image/background.jpg"/>
+    </Window.Background>
+</Window>
